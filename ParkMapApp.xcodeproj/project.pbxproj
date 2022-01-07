@@ -11,9 +11,15 @@
 		11BF06422778A25500EA4B60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF06412778A25500EA4B60 /* SceneDelegate.swift */; };
 		11BF06442778A25500EA4B60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF06432778A25500EA4B60 /* ViewController.swift */; };
 		11BF06472778A25500EA4B60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BF06452778A25500EA4B60 /* Main.storyboard */; };
-		11BF064A2778A25500EA4B60 /* ParkMapApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11BF06482778A25500EA4B60 /* ParkMapApp.xcdatamodeld */; };
+		11BF064A2778A25500EA4B60 /* ParkLocationEntity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11BF06482778A25500EA4B60 /* ParkLocationEntity.xcdatamodeld */; };
 		11BF064C2778A25600EA4B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BF064B2778A25600EA4B60 /* Assets.xcassets */; };
 		11BF064F2778A25600EA4B60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BF064D2778A25600EA4B60 /* LaunchScreen.storyboard */; };
+		11BF06582778A27600EA4B60 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF06572778A27600EA4B60 /* Enum.swift */; };
+		11BF065D2778A2CB00EA4B60 /* ParkLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF065C2778A2CB00EA4B60 /* ParkLocationModel.swift */; };
+		11BF06602778A35B00EA4B60 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF065F2778A35B00EA4B60 /* ImageCell.swift */; };
+		11BF06622778A37400EA4B60 /* ParkDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF06612778A37400EA4B60 /* ParkDetailCell.swift */; };
+		11BF06652778A3F900EA4B60 /* ParkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF06642778A3F900EA4B60 /* ParkListViewController.swift */; };
+		11BF06672778A41400EA4B60 /* ParkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF06662778A41400EA4B60 /* ParkDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		11BF064B2778A25600EA4B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11BF064E2778A25600EA4B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11BF06502778A25600EA4B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BF06572778A27600EA4B60 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		11BF065C2778A2CB00EA4B60 /* ParkLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkLocationModel.swift; sourceTree = "<group>"; };
+		11BF065F2778A35B00EA4B60 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		11BF06612778A37400EA4B60 /* ParkDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailCell.swift; sourceTree = "<group>"; };
+		11BF06642778A3F900EA4B60 /* ParkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListViewController.swift; sourceTree = "<group>"; };
+		11BF06662778A41400EA4B60 /* ParkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +70,54 @@
 		11BF063E2778A25500EA4B60 /* ParkMapApp */ = {
 			isa = PBXGroup;
 			children = (
+				11BF06632778A3EB00EA4B60 /* Controller */,
+				11BF065E2778A34C00EA4B60 /* View */,
+				11BF065B2778A2A900EA4B60 /* Model */,
+				11BF06562778A26500EA4B60 /* Utils */,
 				11BF063F2778A25500EA4B60 /* AppDelegate.swift */,
 				11BF06412778A25500EA4B60 /* SceneDelegate.swift */,
-				11BF06432778A25500EA4B60 /* ViewController.swift */,
 				11BF06452778A25500EA4B60 /* Main.storyboard */,
 				11BF064B2778A25600EA4B60 /* Assets.xcassets */,
 				11BF064D2778A25600EA4B60 /* LaunchScreen.storyboard */,
 				11BF06502778A25600EA4B60 /* Info.plist */,
-				11BF06482778A25500EA4B60 /* ParkMapApp.xcdatamodeld */,
 			);
 			path = ParkMapApp;
+			sourceTree = "<group>";
+		};
+		11BF06562778A26500EA4B60 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				11BF06572778A27600EA4B60 /* Enum.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		11BF065B2778A2A900EA4B60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11BF065C2778A2CB00EA4B60 /* ParkLocationModel.swift */,
+				11BF06482778A25500EA4B60 /* ParkLocationEntity.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11BF065E2778A34C00EA4B60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11BF065F2778A35B00EA4B60 /* ImageCell.swift */,
+				11BF06612778A37400EA4B60 /* ParkDetailCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11BF06632778A3EB00EA4B60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11BF06432778A25500EA4B60 /* ViewController.swift */,
+				11BF06642778A3F900EA4B60 /* ParkListViewController.swift */,
+				11BF06662778A41400EA4B60 /* ParkDetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11BF064A2778A25500EA4B60 /* ParkMapApp.xcdatamodeld in Sources */,
+				11BF06652778A3F900EA4B60 /* ParkListViewController.swift in Sources */,
+				11BF06582778A27600EA4B60 /* Enum.swift in Sources */,
+				11BF064A2778A25500EA4B60 /* ParkLocationEntity.xcdatamodeld in Sources */,
 				11BF06442778A25500EA4B60 /* ViewController.swift in Sources */,
 				11BF06402778A25500EA4B60 /* AppDelegate.swift in Sources */,
 				11BF06422778A25500EA4B60 /* SceneDelegate.swift in Sources */,
+				11BF06672778A41400EA4B60 /* ParkDetailViewController.swift in Sources */,
+				11BF06622778A37400EA4B60 /* ParkDetailCell.swift in Sources */,
+				11BF06602778A35B00EA4B60 /* ImageCell.swift in Sources */,
+				11BF065D2778A2CB00EA4B60 /* ParkLocationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,13 +422,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		11BF06482778A25500EA4B60 /* ParkMapApp.xcdatamodeld */ = {
+		11BF06482778A25500EA4B60 /* ParkLocationEntity.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				11BF06492778A25500EA4B60 /* ParkMapApp.xcdatamodel */,
 			);
 			currentVersion = 11BF06492778A25500EA4B60 /* ParkMapApp.xcdatamodel */;
-			path = ParkMapApp.xcdatamodeld;
+			path = ParkLocationEntity.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

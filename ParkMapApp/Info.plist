@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Park konumuyla ilgili etkinlik eklemek için takvim uygulaması kullanılacaktır.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Park konumunun fotoğrafını eklemek için kamera kullanılacaktır.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Park konumunun fotoğrafını eklemek için kamera kullanılacaktır.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Park konumunun fotoğrafını eklemek için kamera kullanılacaktır.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Konum bilgin bulunduğun bölgedeki adres bilgilerinin alınması için kullanılacaktır.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Konum bilgin bulunduğun bölgedeki adres bilgilerinin alınması için kullanılacaktır.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
