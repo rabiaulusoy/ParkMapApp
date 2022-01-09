@@ -3,7 +3,7 @@
 //  ParkMapApp
 //
 //  Created by rabia on 26.12.2021.
-// modified on 07.01.2022 - test
+// modified on 07.01.2022
 
 import UIKit
 import MapKit
